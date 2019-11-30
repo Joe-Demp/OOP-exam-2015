@@ -19,6 +19,22 @@ end
 puts agency.to_s
 puts
 
-#Part 2
+# Part 2
 agency.create_teams
 puts agency.teams_to_s
+puts "Fitness: #{agency.teams_fitness}"
+puts
+
+# Part 3
+puts 'Elite Curlers:'
+agency.each_curler do |curler|
+  puts curler.name + "\n" if curler.proficiency == 10
+end
+puts
+
+# Part 4
+agency.smart_create_teams
+puts agency.teams_to_s
+puts "Fitness: #{agency.teams_fitness}"
+puts
+
