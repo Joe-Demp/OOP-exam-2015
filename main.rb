@@ -17,3 +17,8 @@ end
 
 # Part 1
 puts agency.to_s
+puts
+
+#Part 2
+agency.create_teams
+puts agency.teams_to_s
